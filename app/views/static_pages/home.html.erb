@@ -1,20 +1,11 @@
-<div class="minRow">
-    <h6>DATA FOR A BRIGHTER FUTURE</h6>
-</div>
 <div id="homepage">
-    <div class="row" id="firstRow">
-        <div class="square" id="logoSq">
-            <img src=<%= image_url('logo.png') %>>
-            <a class="hvr-float" href="/">ABOUT</a>
-            <a class="hvr-float" href="/">CONTACT</a>
-        </div>
-        <div class="rectangle" id="catRct">
-            <a class="hvr-sweep-to-right" href="/">ALL CATEGORIES</a>
-        </div>
-    </div>
-    <div class="row" id="secondRow">
-        <div class="square" id="lobbiestSq">
-            
-        </div>
+    <img class="visible-md visible-lg pull-right full-vh-logo" src="<%= image_url('largedesktoplogo.png')%>">
+    <img class="visible-sm pull-right full-vh-logo" src="<%= image_url('mediumdesktoplogo.png')%>">
+    <img id="smallLogo" class="visible-xs center-block" src="<%= image_url('smalllogo.png')%>">
+    <div class="nav-container text-center">
+        <nav>
+            <a href="/" class="hvr-forward">The project</a>
+            <a>View data<span><br>COMING SOON...</span></a>
+        </nav>
     </div>
 </div>
