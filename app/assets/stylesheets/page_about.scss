@@ -1,0 +1,236 @@
+// QUERIES
+$large: 1200px;
+$medium: 992px;
+$small: 767px;
+$xsmall: 480px;
+/////////////////////////
+///////// THEME /////////
+/////////////////////////
+
+/////////////////////////
+////// ABOUT PAGE ///////
+/////////////////////////
+#aboutpage{
+    h1{
+        font-size: 40px;
+        font-weight: 300;
+        @media screen and (max-width: $medium){
+            font-size: 34px;
+        }
+    }
+    h3{
+        font-size: 24px;
+        font-weight: 600;
+        @media screen and (max-width: $medium){
+            font-size: 18px;
+        }
+        @media screen and (max-width: $small){
+            text-align: center;  
+        }
+    }
+    h1, h3{
+        color: #14354B;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 20px;
+        
+    }
+    p{
+        font-size: 21px;
+        margin-bottom: 80px;
+        text-align: justify;
+        color: #525252;
+        line-height: 35px;
+        @media screen and (max-width: $medium){
+            margin-bottom: 50px;
+            font-size: 15px;
+        }
+    }
+    #introImg{
+        width: 100vw;
+        
+    }
+    .container1{
+        padding: 0 70px;
+        background-color: #F7F7F7;
+        #section1{
+            margin-right: 70px;
+            padding: 35px;
+            background-color: white;
+            top: -200px;
+            position: relative;
+            -webkit-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.1);
+            -moz-box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.1);
+            box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.1);
+            #questionBox{
+                position: absolute;
+                top: -110px;
+                right: 50px;
+            }
+            #firstDiv, #secondDiv{
+                padding-right: 50px;
+            }
+            #secondDiv{
+                padding-top: 200px;
+            }
+            @media screen and (max-width: $medium){
+                margin-right: 40px;
+                padding: 20px 20px 0;
+                #firstDiv, #secondDiv{
+                    padding-right: 20px;
+                }
+            }
+            @media screen and (max-width: $small){
+                margin-right: -15px;
+                margin-left: -15px;
+                top: -70px;
+                #questionBox{
+                    height: 90px;
+                    width: 90px;
+                    top: -50px;
+                }
+                #secondDiv{
+                    padding-top: 10px;
+                }
+            }
+        }
+        #section2{
+            margin-left: 100px;
+            position: relative;
+            top: -110px;
+            font-family: 'Open Sans', sans-serif;
+            color: #14354B;
+            #quoteDiv{
+                img{
+                    position: absolute;
+                    left: -50px;
+                    @media screen and (max-width: $small){
+                        left: -20px;
+                        height: 20px;
+                    }
+                }
+                h2{
+                    font-size: 30px;
+                    line-height: 40px;
+                    width: 360px;
+                    font-weight: 400;
+                    @media screen and (max-width: $medium){
+                        font-size: 19px;
+                        padding-right: 50px;
+                    }
+                    @media screen and (max-width: $small){
+                        font-size: 15px;
+                        line-height: 25px;
+                        width: 250px;
+                    }
+                }
+                #signiture{
+                    position: relative;
+                    left: -50px;
+                    top: 30px;
+                    h5{
+                        font-weight: 400;
+                    }
+                    h6{
+                        font-weight: 300;
+                    }
+                    @media screen and (max-width: $small){
+                        left: -20px;
+                    }
+                }
+                @media screen and (max-width: $small){
+                    position: relative;
+                    top: -50px;
+                }
+            }
+            #imgDiv{
+                position: relative;
+                top: -200px;
+                @media screen and (max-width: $medium){
+                    top: -150px;
+                }
+                @media screen and (max-width: $small){
+                    padding-right: 0;
+                }
+            }
+            @media screen and (max-width: $medium){
+                margin-left: 40px;
+            }
+            @media screen and (max-width: $small){
+                margin-left: 0;  
+                margin-right: 0;
+                top: 30px;
+                padding-bottom: 60px;
+            }
+            @media screen and (max-width: $xsmall){
+                #imgDiv{
+                    width: auto;
+                    padding-left: 0;
+                    display: block;
+                    top: -430px;
+                }
+                #quoteDiv{
+                    top: 400px;
+                    left: 20px;
+                    padding-bottom: 100px;
+                    h2{
+                        width: 80vw;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: $small){
+            padding: 0 30px;  
+        }
+    }
+    
+    
+    
+}
+/////////////////////////
+//////// FOOTER  ////////
+/////////////////////////
+footer{
+    height: 140px;
+    background-color: #4B4B4B;
+    padding-top: 25px;
+    #imgContainer{
+        display: inline-block;
+        img{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 100px;
+            margin-left: 100px;
+            margin-right: 20px;
+            border-right: 1px solid #A0A0A0;
+        }
+    }
+    
+    a{
+        text-decoration: none; 
+        font-size: 15px;
+        color: #A7A8A9;
+        margin-right: 20px;
+        padding: 20px 0;
+        &:hover{
+            color: white;
+            text-decoration: none; 
+            cursor: pointer;
+        }
+    }
+    @media screen and (max-width: $small){
+        padding-left: 0;
+        height: auto;
+        text-align: center;
+        #imgContainer{
+            width: auto;
+            display: block;
+            margin-bottom: 5px;
+            img{
+                border: none;
+                margin: 0 auto;
+                padding: 0;
+                display: block;
+            }
+        }
+    }
+}
