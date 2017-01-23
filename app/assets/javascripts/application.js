@@ -12,5 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+// = r/equire turbolinks
 //= require_tree .
+$(document).ready(function(){
+	$('#icon-container').click(function(){
+		$(this).toggleClass('open');
+		$('#menu').toggleClass('open');
+	});
+});
